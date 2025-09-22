@@ -1,0 +1,74 @@
+2025-09-22 08:37:33,954 INFO Формирование взаимодействия пользователя 1291250 с системой:
+2025-09-22 08:37:33,954 INFO - url: http://127.0.0.1:8082/put, params='user_id':1291250, 'item_id':597280
+2025-09-22 08:37:33,955 DEBUG Starting new HTTP connection (1): 127.0.0.1:8082
+2025-09-22 08:37:33,957 DEBUG http://127.0.0.1:8082 "POST /put?user_id=1291250&item_id=597280 HTTP/1.1" 200 15
+2025-09-22 08:37:33,957 INFO - url: http://127.0.0.1:8082/put, params='user_id':1291250, 'item_id':34308497
+2025-09-22 08:37:33,958 DEBUG Starting new HTTP connection (1): 127.0.0.1:8082
+2025-09-22 08:37:33,959 DEBUG http://127.0.0.1:8082 "POST /put?user_id=1291250&item_id=34308497 HTTP/1.1" 200 15
+2025-09-22 08:37:33,960 INFO - url: http://127.0.0.1:8082/put, params='user_id':1291250, 'item_id':15451554
+2025-09-22 08:37:33,960 DEBUG Starting new HTTP connection (1): 127.0.0.1:8082
+2025-09-22 08:37:33,962 DEBUG http://127.0.0.1:8082 "POST /put?user_id=1291250&item_id=15451554 HTTP/1.1" 200 15
+2025-09-22 08:37:33,962 INFO - url: http://127.0.0.1:8082/put, params='user_id':1291250, 'item_id':32030703
+2025-09-22 08:37:33,963 DEBUG Starting new HTTP connection (1): 127.0.0.1:8082
+2025-09-22 08:37:33,964 DEBUG http://127.0.0.1:8082 "POST /put?user_id=1291250&item_id=32030703 HTTP/1.1" 200 15
+2025-09-22 08:37:33,964 INFO - url: http://127.0.0.1:8082/put, params='user_id':1291250, 'item_id':33220653
+2025-09-22 08:37:33,965 DEBUG Starting new HTTP connection (1): 127.0.0.1:8082
+2025-09-22 08:37:33,966 DEBUG http://127.0.0.1:8082 "POST /put?user_id=1291250&item_id=33220653 HTTP/1.1" 200 15
+2025-09-22 08:37:33,966 INFO Получение off-line рекомендаций: url-http://127.0.0.1:8080/recommendations_offline, params={'user_id': 1291250, 'k': 10}
+2025-09-22 08:37:33,967 DEBUG Starting new HTTP connection (1): 127.0.0.1:8080
+2025-09-22 08:37:34,701 DEBUG http://127.0.0.1:8080 "POST /recommendations_offline?user_id=1291250&k=10 HTTP/1.1" 200 89
+2025-09-22 08:37:34,702 INFO Получение on-line рекомендаций: url-http://127.0.0.1:8080/recommendations_online, params={'user_id': 1291250, 'k': 10}
+2025-09-22 08:37:34,703 DEBUG Starting new HTTP connection (1): 127.0.0.1:8080
+2025-09-22 08:37:34,765 DEBUG http://127.0.0.1:8080 "POST /recommendations_online?user_id=1291250&k=10 HTTP/1.1" 200 82
+2025-09-22 08:37:34,766 INFO Получение all рекомендаций: url-http://127.0.0.1:8080/recommendations, params={'user_id': 1291250, 'k': 10}
+2025-09-22 08:37:34,767 DEBUG Starting new HTTP connection (1): 127.0.0.1:8080
+2025-09-22 08:37:35,155 DEBUG http://127.0.0.1:8080 "POST /recommendations?user_id=1291250&k=10 HTTP/1.1" 200 95
+2025-09-22 08:37:37,838 INFO Онлайн-события
+2025-09-22 08:37:37,895 INFO Вывод: 
+    item_id              albums        artists    genres            track_name                        album_names           artist_names             genre_names
+0    597280             [63761]      [1046232]   [3, 75]             Мелодрама                       [Алкоголики]                [Грани]           [rusrap, rap]
+1  34308497  [4219520, 4343423]  [19641, 2088]      [33]  All Around The World      [All Around The World, TajMo]  [Taj Mahal, Keb' Mo']                 [blues]
+2  15451554           [1689125]       [451523]  [15, 25]                  Фары  [Саундтрек к сериалу «Молодёжка»]                [PIZZA]  [tvseries, soundtrack]
+3  32030703  [1997082, 3897166]       [975699]   [3, 75]          Привет всем!       [Животный мир, Животный мир]            [Макс Корж]           [rusrap, rap]
+4  33220653           [4058568]       [159009]  [11, 20]            Градус 100                       [Градус 100]              [Градусы]           [pop, ruspop]
+2025-09-22 08:37:37,895 INFO Офлайн-рекомендации
+2025-09-22 08:37:37,959 INFO Вывод: 
+    item_id                                             albums            artists  ...                                        album_names                    artist_names                   genre_names
+0     53404  [4367, 89708, 294911, 294912, 294914, 297393, ...             [9262]  ...  [Nevermind, Nirvana, Nevermind, Nevermind, Nev...                       [Nirvana]  [alternative, rock, allrock]
+1  33311009  [4440454, 4456609, 4482682, 4882996, 5072976, ...           [675068]  ...  [Shape Of Pop, NOW That's What I Call Music, E...               [Imagine Dragons]               [rock, allrock]
+2    178529            [18113, 21924, 21940, 488052, 10009799]            [36800]  ...  [Meteora, Meteora, Meteora, Meteora, 00s Rock ...                   [Linkin Park]              [numetal, metal]
+3  35505245                                [4431303, 20559909]  [4611844, 588511]  ...                           [I Got Love, I Got Love]  [Miyagi & Эндшпиль, Рем Дигга]                 [rusrap, rap]
+4  24692821  [2888516, 3523463, 3530199, 4333848, 4420934, ...          [1194096]  ...  [Way down We Go, Summer Music 2016, A/B, DFM D...                         [KALEO]                       [indie]
+5    795836  [88770, 296297, 297576, 302579, 303469, 558376...              [680]  ...  [Ten Summoner's Tales, 25 Years, The Best Of 2...                         [Sting]          [pop, rock, allrock]
+6   6705392  [720505, 949761, 2118709, 4501364, 6681581, 11...            [36963]  ...  [Elephant, Seven Nation Army, Pay Close Attent...             [The White Stripes]                 [alternative]
+7  32947997      [4019560, 4172930, 4172931, 5614201, 5933975]           [381067]  ...            [Shape of You, ÷, ÷, Summer Vibes, Pop]                    [Ed Sheeran]                         [pop]
+8     37384  [3096, 5728, 5875, 6720, 8501, 59912, 67440, 8...             [7444]  ...  [Stars: The Best Of The Cranberries 1992-2002,...               [The Cranberries]               [rock, allrock]
+9  45499814  [6109461, 7094821, 7152451, 7170954, 7285586, ...          [5007577]  ...  [Life, Life, Made in Russia, Fresh Dance, Life...                        [Zivert]                 [pop, ruspop]
+
+[10 rows x 8 columns]
+2025-09-22 08:37:37,959 INFO Онлайн-рекомендации
+2025-09-22 08:37:38,010 INFO Вывод: 
+    item_id              albums    artists    genres       track_name                        album_names        artist_names             genre_names
+0  35899929           [4498602]   [975699]   [3, 75]            Где я                         [Домашний]         [Макс Корж]           [rusrap, rap]
+1  32030691  [1997082, 3897166]   [975699]   [3, 75]      Супер агент       [Животный мир, Животный мир]         [Макс Корж]           [rusrap, rap]
+2  35899928           [4498602]   [975699]   [3, 75]  Кто здесь отец?                         [Домашний]         [Макс Корж]           [rusrap, rap]
+3  35081522           [4356160]  [4464403]  [11, 20]    Его звали май                    [Его звали май]  [Анна Калашникова]           [pop, ruspop]
+4  15451558           [1689125]   [519326]  [15, 25]           Пускай  [Саундтрек к сериалу «Молодёжка»]         [Интонация]  [tvseries, soundtrack]
+5  32038178           [1683700]   [975699]   [3, 75]     Здоровый сон                      [Жить в кайф]         [Макс Корж]           [rusrap, rap]
+6  35899922           [4498602]   [975699]   [3, 75]         Домашний                         [Домашний]         [Макс Корж]           [rusrap, rap]
+7  31865221           [3871406]   [677836]  [11, 20]           Серёжа                           [Серёжа]          [НЕАНГЕЛЫ]           [pop, ruspop]
+2025-09-22 08:37:38,010 INFO Рекомендации
+2025-09-22 08:37:38,070 INFO Вывод: 
+    item_id                                             albums            artists  ...                                        album_names                    artist_names                   genre_names
+0  35899929                                          [4498602]           [975699]  ...                                         [Домашний]                     [Макс Корж]                 [rusrap, rap]
+1     53404  [4367, 89708, 294911, 294912, 294914, 297393, ...             [9262]  ...  [Nevermind, Nirvana, Nevermind, Nevermind, Nev...                       [Nirvana]  [alternative, rock, allrock]
+2  32030691                                 [1997082, 3897166]           [975699]  ...                       [Животный мир, Животный мир]                     [Макс Корж]                 [rusrap, rap]
+3  33311009  [4440454, 4456609, 4482682, 4882996, 5072976, ...           [675068]  ...  [Shape Of Pop, NOW That's What I Call Music, E...               [Imagine Dragons]               [rock, allrock]
+4  35899928                                          [4498602]           [975699]  ...                                         [Домашний]                     [Макс Корж]                 [rusrap, rap]
+5    178529            [18113, 21924, 21940, 488052, 10009799]            [36800]  ...  [Meteora, Meteora, Meteora, Meteora, 00s Rock ...                   [Linkin Park]              [numetal, metal]
+6  35081522                                          [4356160]          [4464403]  ...                                    [Его звали май]              [Анна Калашникова]                 [pop, ruspop]
+7  35505245                                [4431303, 20559909]  [4611844, 588511]  ...                           [I Got Love, I Got Love]  [Miyagi & Эндшпиль, Рем Дигга]                 [rusrap, rap]
+8  15451558                                          [1689125]           [519326]  ...                  [Саундтрек к сериалу «Молодёжка»]                     [Интонация]        [tvseries, soundtrack]
+9  24692821  [2888516, 3523463, 3530199, 4333848, 4420934, ...          [1194096]  ...  [Way down We Go, Summer Music 2016, A/B, DFM D...                         [KALEO]                       [indie]
+
+[10 rows x 8 columns]
